@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C2709311AF42B9600322F2D /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2709301AF42B9600322F2D /* Inventory.swift */; };
+		8C65C5081AF48BA200AC51CE /* WorkDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C65C5071AF48BA200AC51CE /* WorkDay.swift */; };
+		8C7B9B731AF42F7000A9529B /* Lemonade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B9B721AF42F7000A9529B /* Lemonade.swift */; };
+		8C7B9B751AF433C300A9529B /* BusinessPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C7B9B741AF433C300A9529B /* BusinessPlan.swift */; };
 		8C819CA31AF1EC540072DE67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C819CA21AF1EC540072DE67 /* AppDelegate.swift */; };
 		8C819CA51AF1EC540072DE67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C819CA41AF1EC540072DE67 /* ViewController.swift */; };
 		8C819CA81AF1EC540072DE67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C819CA61AF1EC540072DE67 /* Main.storyboard */; };
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C2709301AF42B9600322F2D /* Inventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		8C65C5071AF48BA200AC51CE /* WorkDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkDay.swift; sourceTree = "<group>"; };
+		8C7B9B721AF42F7000A9529B /* Lemonade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lemonade.swift; sourceTree = "<group>"; };
+		8C7B9B741AF433C300A9529B /* BusinessPlan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessPlan.swift; sourceTree = "<group>"; };
 		8C819C9D1AF1EC540072DE67 /* Lemonade Stand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lemonade Stand.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C819CA11AF1EC540072DE67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8C819CA21AF1EC540072DE67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +88,10 @@
 				8C819CA21AF1EC540072DE67 /* AppDelegate.swift */,
 				8C819CA41AF1EC540072DE67 /* ViewController.swift */,
 				8C819CA61AF1EC540072DE67 /* Main.storyboard */,
+				8C7B9B741AF433C300A9529B /* BusinessPlan.swift */,
+				8C2709301AF42B9600322F2D /* Inventory.swift */,
+				8C7B9B721AF42F7000A9529B /* Lemonade.swift */,
+				8C65C5071AF48BA200AC51CE /* WorkDay.swift */,
 				8C819CA91AF1EC540072DE67 /* Images.xcassets */,
 				8C819CAB1AF1EC540072DE67 /* LaunchScreen.xib */,
 				8C819CA01AF1EC540072DE67 /* Supporting Files */,
@@ -212,8 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C2709311AF42B9600322F2D /* Inventory.swift in Sources */,
 				8C819CA51AF1EC540072DE67 /* ViewController.swift in Sources */,
+				8C7B9B731AF42F7000A9529B /* Lemonade.swift in Sources */,
 				8C819CA31AF1EC540072DE67 /* AppDelegate.swift in Sources */,
+				8C7B9B751AF433C300A9529B /* BusinessPlan.swift in Sources */,
+				8C65C5081AF48BA200AC51CE /* WorkDay.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +425,7 @@
 				8C819CBE1AF1EC540072DE67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C819CBF1AF1EC540072DE67 /* Build configuration list for PBXNativeTarget "Lemonade StandTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +434,7 @@
 				8C819CC11AF1EC540072DE67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
