@@ -75,12 +75,12 @@ class ViewController: UIViewController {
             
             //show the reportString in an action sheet
             let reportDisplay = UIAlertController(title: "Daily Report", message: reportString, preferredStyle: UIAlertControllerStyle.ActionSheet)
-            reportDisplay.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+            reportDisplay.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: {(UIAlertAction)->Void in self.updateInventoryDisplay(self.plan.closeForTheNight(report.revenue))}))
             self.presentViewController(reportDisplay, animated: true, completion: nil)
             
             // balance the books and check for a lack of cash
             //update UI
-            updateInventoryDisplay(plan.closeForTheNight(report.revenue))
+            //updateInventoryDisplay(plan.closeForTheNight(report.revenue))
             updateRecipeDisplay(Lemonade())
             updateWeatherDisplay(WorkDay.weather())
             
@@ -97,6 +97,9 @@ class ViewController: UIViewController {
             inventoryCashLabel.text = "$\(manifest.cash)"
         } else {
             displayError(manifest.error)
+            if manifest.error == "Game Over\nTry Again" {
+                viewDidLoad()
+            }
         }
     }
     func updateRecipeDisplay(recipe:Lemonade) {
